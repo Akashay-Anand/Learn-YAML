@@ -114,6 +114,38 @@ date (00:00:00Z): 2002-12-14
 * https://yaml-online-parser.appspot.com/
 * https://www.json2yaml.com/
 
+### SEQUENCES/COLLECTIONS
+
+> Sequences are values listed in a specific order A sequence starts with a dash and a space You can think of a sequence as a Python list or an array in Bash or Perl They can be defined with either block style or inline flow style
+
+> Block style uses spaces to structure the list or array It’s easier to read but is less compact compared to flow style
+
+> In Flow styles we can write sequences inline using square brackets, similar to an array declaration in a programming language like Python, Java or JavaScript Flow style is more compact but harder to read at a glance
+
+> We can always, embed a sequence into another sequence
+
+> Ex:
+> <img width="578" alt="image" src="https://github.com/Akashay-Anand/Learn-YAML/assets/82114930/ea0c4dec-88c4-4ca9-aac1-c9ef307853ef">
+
+
+### DICTIONARIES/MAPPINGS
+> Dictionaries are collections of key value pairs all nested under the same subgroup They’re helpful to divide data into logical categories for later use
+
+> Dictionaries are defined with a name, a colon, and a space followed by 1 or more indented key value pairs
+
+> Using Dictionaries, we can build information related objects like Person, Application, Vehicle etc
+
+> The key value is YAML's basic building block Every item in a YAML document is a member of at least one dictionary The key is always a string The value is a scalar so that it can be any datatype So, as we've already seen, the value can be a string, a number, or another dictionary
+
+> Ex:
+> <img width="553" alt="image" src="https://github.com/Akashay-Anand/Learn-YAML/assets/82114930/c40a2ca2-c9b9-45be-b429-41f57029f338">
+
+
+### COMMON STRUCTURE OF YAML
+
+> <img width="671" alt="image" src="https://github.com/Akashay-Anand/Learn-YAML/assets/82114930/7918800a-2ec9-481a-b176-4b5359cfa162">
+
+
 
 
 # I will be adding more content very soon;
