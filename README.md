@@ -110,9 +110,7 @@ date (00:00:00Z): 2002-12-14
 * If the time zone is omitted, the timestamp is assumed to be specified in UTC The time part may be omitted altogether, resulting in a date format In such a case, the time part is assumed to be 00 00 00 Z (start of day, UTC)
 * We can define the timezone by including how many hours it is ahead or behind UTC For example, we can set a timestamp as EST with a 5 at the end.
 
-// Resources
-* https://yaml-online-parser.appspot.com/
-* https://www.json2yaml.com/
+
 
 ### SEQUENCES/COLLECTIONS
 
@@ -145,8 +143,36 @@ date (00:00:00Z): 2002-12-14
 
 > <img width="671" alt="image" src="https://github.com/Akashay-Anand/Learn-YAML/assets/82114930/7918800a-2ec9-481a-b176-4b5359cfa162">
 
+### COMPLEX KEYS IN YAML
+* Keys can also be complex inside YAML, like multi-line string We use followed by a space to indicate the start of a complex key
+* Sample YAML file with complex key related examples and it’s corresponding JSON file,
+> <img width="661" alt="image" src="https://github.com/Akashay-Anand/Learn-YAML/assets/82114930/5e4d7130-58e8-4ca1-83f4-70f7a5e6803f">
+
+### ANCHORS & ALIAS IN YAML
+
+> Anchors and aliases let you identify an item with an anchor in a YAML document, and then refer to that item with an alias later in the same document
+
+> Anchors are identified by an __&__ character, and aliases by an __*__ character
+
+> Anchors Aliases can be considered If we have repeated sections inside our yaml files They can reduce effort and make updating in bulk, easier
+> The Alias essentially acts as a "see above’’ command, which makes the program pause standard traversal, return to the anchor point, then resume standard traversal after the Anchored portion is finished
+> YAML anchors and aliases cannot contain the and characters
+
+> Ex: ![image](https://github.com/Akashay-Anand/Learn-YAML/assets/82114930/b1ae51db-36ed-4e0b-8f7b-3456c5175665)
 
 
+### OVERRIDE ANCHORS VALUES IN YAML
+> what if you want essentially the same block of code with one small change?
+> You can use overrides with the characters __<<__ before the Alias to add more values, or override existing ones
+
+> ex:
+> ![image](https://github.com/Akashay-Anand/Learn-YAML/assets/82114930/b2de3678-e93f-415b-ab58-555d7ddc16af)
+
+
+
+// Resources
+* https://yaml-online-parser.appspot.com/
+* https://www.json2yaml.com/
 
 # I will be adding more content very soon;
 # Happy Learning 🧑🏻‍💻🥷👩🏻‍🚀
