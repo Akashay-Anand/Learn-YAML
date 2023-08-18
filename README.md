@@ -160,6 +160,7 @@ date (00:00:00Z): 2002-12-14
 
 > Ex: ![image](https://github.com/Akashay-Anand/Learn-YAML/assets/82114930/b1ae51db-36ed-4e0b-8f7b-3456c5175665)
 
+<br/>
 
 ### OVERRIDE ANCHORS VALUES IN YAML
 > what if you want essentially the same block of code with one small change?
@@ -168,9 +169,21 @@ date (00:00:00Z): 2002-12-14
 > ex:
 > ![image](https://github.com/Akashay-Anand/Learn-YAML/assets/82114930/b2de3678-e93f-415b-ab58-555d7ddc16af)
 
+<br/>
+<br/>
+<br/>
+
+### MULTI-DOCUMENT SUPPORT IN YAML
+
+* A document starts with three dashes __(---)__ and ends with three periods __(...)__
+* Some YAML processors require the document start operator. The end operator is usually optional For example, Java's Jackson will not process a YAML document without the start, but Python's PyYAML will.
+* We can have multiple YAML documents in a single YAML file to make file organization or data parsing easier The separation between each document is marked by three dashes __(---)__
+
+<img width="863" alt="image" src="https://github.com/Akashay-Anand/Learn-YAML/assets/82114930/074f1eaf-a6a0-4c87-bc21-16345f0b15b4">
 
 
 // Resources
+* https://yaml.org/
 * https://yaml-online-parser.appspot.com/
 * https://www.json2yaml.com/
 
